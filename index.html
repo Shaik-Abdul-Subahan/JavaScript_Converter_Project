@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS convertor</title>
+    <title>JS Convertor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="app.js"></script>
 
     <div class="container">
-        <h2 class="convertor">Convert meters into centimeters!</h2>
-        <input type="value" id="cm" placeholder="Enter Meters Here"></input>
+        <h2 class="convertor">Convert units!</h2>
+        <select id="conversionType">
+            <option value="metersToCm">Meters to Centimeters</option>
+            <option value="cmToMeters">Centimeters to Meters</option>
+            <option value="kmToMeters">Kilometers to Meters</option>
+            <option value="milesToKm">Miles to Kilometers</option>
+        </select>
+        <input type="text" id="inputValue" placeholder="Enter value here" />
         <div class="btns">
-            <button class="btn" onclick="convert()">convert</button>
+            <button class="btn" onclick="convert()">Convert</button>
             <button class="btn" onclick="reset()">Reset</button>
-        </div.btn
-       >
+        </div>
         <h3 id="result">Here you will get the result!</h3>
     </div>
 </body>
